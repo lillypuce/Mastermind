@@ -32,7 +32,7 @@ public class VuePropositions extends Canvas{
 			for(int i=0;i<Modèle.DIFFICULTE;i++) {
 				x = (i * 40) + 10;
 				y = (j * 40) + 10; 
-				g.setColor(Color.GREEN);
+				g.setColor(Color.red);
 				g.fillOval(x, y, 30, 30);
 				
 			}
