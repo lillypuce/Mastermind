@@ -1,5 +1,6 @@
+import java.awt.Panel;
 
-public class VueClavier {
+public class VueClavier extends Panel{
 
 	
 

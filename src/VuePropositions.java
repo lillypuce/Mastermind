@@ -11,6 +11,7 @@ public class VuePropositions extends Canvas{
 	
 	public VuePropositions(){
 		
+		
 		mainFrame=new Frame("test");
 		mainFrame.setSize(500,500);
 		
