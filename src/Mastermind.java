@@ -16,6 +16,7 @@ public class Mastermind extends Frame implements WindowListener {
 		VuePropositions panneaugauche= new VuePropositions();
 		this.add(panneaugauche,BorderLayout.WEST);
 		
+		
 		VueClavier panneauBas=new VueClavier();
 		this.add(panneauBas, BorderLayout.SOUTH);
 		

@@ -14,25 +14,30 @@ public class VuePropositions extends Canvas{
 	public VuePropositions(){
 		super();
 		this.modl=new Modèle();
-		this.d=new Dimension(100,100);
+		this.d=new Dimension(100*Modèle.DIFFICULTE,50*Modèle.N_TENTATIVES);
 		this.setSize(d);
 		
 		
-		
-		
-		
+	
 		
 	}
-	
-	public void cercle(Graphics g) {
-		g.setColor(Color.lightGray);
-		
+	@Override
+	public void paint(Graphics g) {
+
+		g.setColor(Color.BLACK);		
 		
 		int x=10;
-		for(int i=0;i<4;i++) {
-			g.drawOval(x+i*10, x, 10, 10);
-			g.setColor(Color.BLACK);
-		}
+		int y=10;
+		for(int j =0; j<Modèle.N_TENTATIVES;j++) {
+			for(int i=0;i<Modèle.DIFFICULTE;i++) {
+				x = (i * 40) + 10;
+				y = (j * 40) + 10; 
+				g.setColor(Color.GREEN);
+				g.fillOval(x, y, 30, 30);
+				
+			}
+			
+			
 		
 		//g.drawOval(10, 10, 10, 10);
 		//g.setColor(Color.BLACK);
@@ -47,7 +52,7 @@ public class VuePropositions extends Canvas{
 		//g.setColor(Color.BLACK);
 		
 	}
-	
+	}
 	
 	
 	
